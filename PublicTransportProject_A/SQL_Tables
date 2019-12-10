@@ -1,0 +1,35 @@
+CREATE TABLE person (
+	ssn int(9) NOT NULL,
+	firstName varchar(25) DEFAULT NULL,
+	lastName varchar(25) DEFAULT NULL,
+	address varchar(50) DEFAULT NULL,
+	zip int(5) DEFAULT NULL,
+	state char(2) DEFAULT NULL,
+	username varchar(25) DEFAULT NULL,
+	password varchar(25) DEFAULT NULL,
+	email varchar(25) DEFAULT NULL,
+	secQuestion varchar(50) DEFAULT NULL,
+	secAnswer varchar(25) DEFAULT NULL,
+	PRIMARY KEY (ssn)
+);
+
+CREATE TABLE trip (
+	tripID int(8) NOT NULL,
+	departure varchar(25) DEFAULT NULL,
+	arrival varchar(25) DEFAULT NULL,
+	time char(5) DEFAULT NULL,
+	date varchar(10) DEFAULT NULL,
+	price decimal(5,2) DEFAULT NULL,
+	seats int(2) DEFAULT NULL,
+	PRIMARY KEY(tripID)
+);
+
+CREATE TABLE ticket (
+	ticketNum int(4) DEFAULT NULL,
+	ssn int(9) NOT NULL,
+	tripID int(8) NOT NULL,
+	username varchar(25) DEFAULT NULL,
+	PRIMARY KEY (ssn, tripID),
+	CONSTRAINT ssn FOREIGN KEY (ssn) REFERENCES person (ssn),
+	CONSTRAINT tripID FOREIGN KEY (tripID) REFERENCES trip (tripID)
+);

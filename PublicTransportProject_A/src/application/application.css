@@ -1,0 +1,31 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+AnchorPane{
+	-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, cornflowerblue, white);
+}
+
+#loading{
+	-fx-font: 50px Tahoma;
+	-fx-font-family: "Segoe UI Semibold";
+}
+
+#mainMenuText{
+	-fx-font: 20px Tahoma;
+	-fx-font-family: "Segoe UI Semibold";
+}
+
+Button{
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-background-radius: 5em;
+}
+
+TextFeild{
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-background-radius: 3em;
+}
+
+#registerText{
+	-fx-font: 30px Tahoma;
+	-fx-font-family: "Segoe UI Semibold";
+}
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../application.css" fx:controller="application.Controllers.SplashScreenController">
+	<children>
+		<ImageView fitHeight="100.0" fitWidth="100.0" layoutX="340.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="https://img.icons8.com/wired/64/000000/bus.png" />
+			</image>
+		</ImageView>
+		<Label layoutX="280.0" layoutY="250.0" fx:id="loading">LOADING</Label>
+	</children>
+</AnchorPane>
+

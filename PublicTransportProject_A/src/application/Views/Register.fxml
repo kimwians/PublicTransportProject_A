@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../application.css" fx:controller="application.Controllers.RegisterController">
+	<TextField layoutX="100.0" layoutY="50.0">First Name</TextField>
+	<TextField layoutX="100.0" layoutY="90.0">Last Name</TextField>
+	<TextField layoutX="100.0" layoutY="130.0">Adress</TextField>
+	<TextField layoutX="100.0" layoutY="170.0">Zip Code</TextField>
+	<TextField layoutX="100.0" layoutY="210.0">SSN</TextField>
+	
+	
+	<TextField layoutX="500.0" layoutY="50.0">Username</TextField>
+	<TextField layoutX="500.0" layoutY="90.0">Password</TextField>
+	<TextField layoutX="500.0" layoutY="130.0">Retype Password</TextField>
+	<MenuBar layoutX="510.0" layoutY="170.0">
+		<Menu text = "Security Question">
+		    <items>
+               <MenuItem text="What was the name of your first pet?"/>
+               <MenuItem text="One a scale of 1-10 how much do you love professor Aria?"/>
+               <MenuItem text="What's the name of the ex-boyfriend/ex-girlfriend you avoid most?"/>
+            </items>
+		</Menu>
+	</MenuBar>
+	<TextField layoutX="500.0" layoutY="210.0">Answer</TextField>
+	
+	<Label layoutX="150.0" layoutY="290.0" fx:id="registerText">Start saving time today. Register!</Label>
+	
+	<Button fx:id="registerButton" layoutX="280.0" layoutY="400.0">Submit</Button>
+	
+	
+</AnchorPane>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" stylesheets = "@../application.css" fx:controller = "application.Controllers.MainMenuController">
+
+	<Label layoutX="60.0" layoutY="150.0" fx:id="mainMenuText">Register now and join the fastest online bus reservation system in the US.</Label>
+	
+	<ImageView layoutX="280.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+		<image>
+			<Image url="https://img.icons8.com/metro/26/000000/edit-user-male.png" />
+		</image>
+	</ImageView> 
+	<Button fx:id="signUpButton" layoutX="320.0" layoutY="200.0" onAction="#goToRegister">Sign up</Button>
+	
+	<ImageView layoutX="280.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+		<image>
+			<Image url="https://img.icons8.com/material-sharp/24/000000/login-rounded-right.png"/>
+		</image>
+	</ImageView> 
+	<Button fx:id="loginButton" layoutX="320.0" LayoutY="250.0" onAction="#goToLogin">Log in</Button>
+	
+	<ImageView fitHeight="150" fitWidth ="200" layoutX="320.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+		<image>
+			<Image url="https://img.icons8.com/nolan/64/000000/bus.png"/>
+		</image>
+	</ImageView> 
+	
+</AnchorPane>
+
